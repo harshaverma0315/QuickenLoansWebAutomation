@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-11-13T05:29:29Z" name="Suite" finished-at="2018-11-13T05:29:56Z" duration-ms="26476">
+    <groups>
+    </groups>
+    <test started-at="2018-11-13T05:29:29Z" name="Test" finished-at="2018-11-13T05:29:56Z" duration-ms="26476">
+      <class name="mortgageCalculatorTest.PurchaseTest">
+        <test-method is-config="true" signature="basePageNavigation()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@7c6908d7]" started-at="2018-11-13T05:29:29Z" name="basePageNavigation" finished-at="2018-11-13T05:29:51Z" duration-ms="21975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="homePage()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@7c6908d7]" started-at="2018-11-13T05:29:51Z" name="homePage" finished-at="2018-11-13T05:29:52Z" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method signature="mortgageCalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mortgageCalculatorTest.PurchaseTest@7c6908d7]" started-at="2018-11-13T05:29:52Z" name="mortgageCalculator" data-provider="getData" finished-at="2018-11-13T05:29:56Z" depends-on-methods="mortgageCalculatorTest.PurchaseTest.homePage" duration-ms="3256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[68124]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[720]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mortgageCalculator -->
+      </class> <!-- mortgageCalculatorTest.PurchaseTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
