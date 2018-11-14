@@ -43,6 +43,9 @@ public class MortgageCalculatorPage {
 	@FindBy(className="LPMimage")
 	WebElement chatNow;
 	
+	@FindBy(linkText="Refinancing instead?")
+	WebElement refinanceInstead;
+	
 	public WebElement purchasePrice()
 	{
 		return purchasePrice;
