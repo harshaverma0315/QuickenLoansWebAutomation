@@ -86,4 +86,9 @@ public class MortgageCalculatorPage {
 		return chatNow;
 	}
 	
+	public WebElement refinanceInstead()
+	{
+		return refinanceInstead;
+	}
+	
 }

@@ -22,6 +22,7 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import mortgageCalculatorPageObjects.CalculatorDropdownPage;
 import mortgageCalculatorPageObjects.MortgageCalculatorPage;
+import mortgageCalculatorPageObjects.RefinanceInsteadPage;
 import resources.base;
 
 public class PurchaseTest extends base {
@@ -74,20 +75,14 @@ public class PurchaseTest extends base {
 		mcp.zipCode().sendKeys(zipCode);
 		Select s = new Select(mcp.creditScore());
 		s.selectByValue(creditScore);
-		
-		if(mcp.chatNow().isDisplayed()) {
-			Assert.assertTrue(mcp.chatNow().isDisplayed());
-		}
-		else {
-			WebDriverWait wait = new WebDriverWait(driver, 30);
-			wait.until(ExpectedConditions.visibilityOf(mcp.popUp())).click();
-		}
-		
+
 		mcp.submit().click();
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(mcp.popUp())).click();
 
 	}
 
-	@AfterTest (enabled = false)
+	@AfterTest(enabled = false)
 	public void teardown() {
 		driver.close();
 	}

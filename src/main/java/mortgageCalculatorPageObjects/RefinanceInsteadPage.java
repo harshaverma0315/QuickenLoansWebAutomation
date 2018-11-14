@@ -42,7 +42,7 @@ public class RefinanceInsteadPage {
 		return refinanceGoal;
 	}
 
-	public WebElement currentLoanBalanceAmount() {
+	public WebElement currentLoanBalanceAmount(String string) {
 		return currentLoanBalanceAmount;
 	}
 
@@ -69,4 +69,6 @@ public class RefinanceInsteadPage {
 	public WebElement submit() {
 		return refinaceSubmit;
 	}
+
+	
 }

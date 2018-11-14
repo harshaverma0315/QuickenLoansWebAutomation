@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19699" started-at="2018-11-13T05:28:34Z" finished-at="2018-11-13T05:28:53Z">
+  <suite name="Default suite" duration-ms="41214" started-at="2018-11-14T16:55:56Z" finished-at="2018-11-14T16:56:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19699" started-at="2018-11-13T05:28:34Z" finished-at="2018-11-13T05:28:53Z">
+    <test name="Default test" duration-ms="41214" started-at="2018-11-14T16:55:56Z" finished-at="2018-11-14T16:56:38Z">
       <class name="mortgageCalculatorTest.PurchaseTest">
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="basePageNavigation" is-config="true" duration-ms="14823" started-at="2018-11-13T05:28:34Z" finished-at="2018-11-13T05:28:49Z">
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="basePageNavigation" is-config="true" duration-ms="15889" started-at="2018-11-14T16:55:56Z" finished-at="2018-11-14T16:56:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="homePage" duration-ms="512" started-at="2018-11-13T05:28:49Z" finished-at="2018-11-13T05:28:49Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="homePage" duration-ms="517" started-at="2018-11-14T16:56:12Z" finished-at="2018-11-14T16:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="mortgageCalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="mortgageCalculator" duration-ms="3710" started-at="2018-11-13T05:28:50Z" data-provider="getData" depends-on-methods="mortgageCalculatorTest.PurchaseTest.homePage" finished-at="2018-11-13T05:28:53Z">
+        <test-method status="PASS" signature="mortgageCalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="mortgageCalculator" duration-ms="23707" started-at="2018-11-14T16:56:14Z" data-provider="getData" depends-on-methods="mortgageCalculatorTest.PurchaseTest.homePage" finished-at="2018-11-14T16:56:38Z">
           <params>
             <param index="0">
               <value>
