@@ -40,7 +40,10 @@ public class MortgageCalculatorPage {
 	@FindBy(id="need_close")
 	WebElement popUp;	
 	
-	@FindBy(className="LPMimage")
+	/*@FindBy(className="LPMimage")
+	WebElement chatNow;*/
+	
+	@FindBy(xpath="//img[@class='LPMimage']")
 	WebElement chatNow;
 	
 	@FindBy(linkText="Refinancing instead?")

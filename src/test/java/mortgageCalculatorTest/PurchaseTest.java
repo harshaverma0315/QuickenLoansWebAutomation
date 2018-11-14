@@ -57,6 +57,28 @@ public class PurchaseTest extends base {
 		return DataCellValues;
 	}
 
+	@DataProvider
+	public Object[][] getData2() throws IOException {
+
+		FileInputStream fis = new FileInputStream("C:\\Users\\Harsha\\Desktop\\quickenExcel.xlsx");
+		XSSFWorkbook workBook = new XSSFWorkbook(fis);
+		XSSFSheet sheet = workBook.getSheet("refinance");
+		int getTotalRows = sheet.getLastRowNum();
+		System.out.println(getTotalRows + " is the totals no. of rows in refinance sheet");
+		int getTotalCol = sheet.getRow(0).getLastCellNum();
+		System.out.println(getTotalCol + " is the totals no. of columns in first row");
+		Object[][] DataCellValues = new Object[getTotalRows + 1][getTotalCol];
+		for (int i = 0; i <= getTotalRows; i++) {
+			XSSFRow row = sheet.getRow(i);
+			for (int j = 0; j <= getTotalCol - 1; j++) {
+				XSSFCell cell = row.getCell(j);
+				DataCellValues[i][j] = new DataFormatter().formatCellValue(row.getCell(j));
+				System.out.println(DataCellValues[i][j]);
+			}
+		}
+		return DataCellValues;
+	}
+
 	@Test
 	public void homePage() {
 		CalculatorDropdownPage cdp = new CalculatorDropdownPage(driver);
@@ -79,6 +101,25 @@ public class PurchaseTest extends base {
 		mcp.submit().click();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(mcp.popUp())).click();
+
+		Assert.assertTrue(mcp.chatNow().isDisplayed());
+
+	}
+
+	@Test(dataProvider = "getData2", dependsOnMethods = { "homePage" })
+	public void refinanceCalculator(String goal, String balance, String home, String zip, String credit) {
+		MortgageCalculatorPage mcp = new MortgageCalculatorPage(driver);
+		mcp.refinanceInstead().click();
+		RefinanceInsteadPage rip = new RefinanceInsteadPage(driver);
+		Select s1 = new Select(rip.refinanceGoal());
+		s1.selectByValue(goal);
+		rip.currentLoanBalanceAmount().sendKeys(balance);
+		rip.homeValue().sendKeys(home);
+		rip.noButton().click();
+		rip.zipCode().sendKeys(zip);
+		Select s2 = new Select(rip.creditScore());
+		s2.selectByValue(credit);
+		rip.submit().click();
 
 	}
 

@@ -1,3 +1,4 @@
 resources\base.class
-mortgageCalculatorPageObjects\CalculatorDropdownPage.class
 mortgageCalculatorPageObjects\MortgageCalculatorPage.class
+mortgageCalculatorPageObjects\CalculatorDropdownPage.class
+mortgageCalculatorPageObjects\RefinanceInsteadPage.class

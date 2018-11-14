@@ -9,6 +9,7 @@
           <include name="mortgageCalculator" invocation-numbers="0"/>
           <include name="teardown"/>
           <include name="basePageNavigation"/>
+          <include name="refinanceCalculator" invocation-numbers="0"/>
         </methods>
       </class> <!-- mortgageCalculatorTest.PurchaseTest -->
     </classes>

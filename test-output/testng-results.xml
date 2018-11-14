@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41214" started-at="2018-11-14T16:55:56Z" finished-at="2018-11-14T16:56:38Z">
+  <suite name="Suite" duration-ms="82164" started-at="2018-11-14T17:58:55Z" finished-at="2018-11-14T18:00:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41214" started-at="2018-11-14T16:55:56Z" finished-at="2018-11-14T16:56:38Z">
+    <test name="Test" duration-ms="82164" started-at="2018-11-14T17:58:55Z" finished-at="2018-11-14T18:00:17Z">
       <class name="mortgageCalculatorTest.PurchaseTest">
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="basePageNavigation" is-config="true" duration-ms="15889" started-at="2018-11-14T16:55:56Z" finished-at="2018-11-14T16:56:12Z">
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="basePageNavigation" is-config="true" duration-ms="23484" started-at="2018-11-14T17:58:55Z" finished-at="2018-11-14T17:59:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="homePage" duration-ms="517" started-at="2018-11-14T16:56:12Z" finished-at="2018-11-14T16:56:13Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="homePage" duration-ms="539" started-at="2018-11-14T17:59:18Z" finished-at="2018-11-14T17:59:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="mortgageCalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="mortgageCalculator" duration-ms="23707" started-at="2018-11-14T16:56:14Z" data-provider="getData" depends-on-methods="mortgageCalculatorTest.PurchaseTest.homePage" finished-at="2018-11-14T16:56:38Z">
+        <test-method status="PASS" signature="mortgageCalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="mortgageCalculator" duration-ms="39377" started-at="2018-11-14T17:59:20Z" data-provider="getData" depends-on-methods="mortgageCalculatorTest.PurchaseTest.homePage" finished-at="2018-11-14T17:59:59Z">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mortgageCalculator -->
+        <test-method status="PASS" signature="refinanceCalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mortgageCalculatorTest.PurchaseTest@5c3bd550]" name="refinanceCalculator" duration-ms="17756" started-at="2018-11-14T17:59:59Z" data-provider="getData2" depends-on-methods="mortgageCalculatorTest.PurchaseTest.homePage" finished-at="2018-11-14T18:00:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ShortenTerm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[60000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[68123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[720]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refinanceCalculator -->
       </class> <!-- mortgageCalculatorTest.PurchaseTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

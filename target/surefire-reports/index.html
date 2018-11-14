@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mortgageCalculatorTest.PurchaseTest" class="method navigator-link" hash-for-method="mortgageCalculator(90000, 20000, 68124, 720)">mortgageCalculator(90000, 20000, 68124, 720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mortgageCalculatorTest.PurchaseTest" class="method navigator-link" hash-for-method="refinanceCalculator(ShortenTerm, 50000, 60000, 68123, 720)">refinanceCalculator(ShortenTerm, 50000, 60000, 68123, 720)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,6 +146,14 @@
                   </a> <!-- mortgageCalculator(90000, 20000, 68124, 720) -->
                   <span class="method-name">mortgageCalculator</span>
                   <span class="parameters">(90000, 20000, 68124, 720)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refinanceCalculator(ShortenTerm, 50000, 60000, 68123, 720)">
+                  </a> <!-- refinanceCalculator(ShortenTerm, 50000, 60000, 68123, 720) -->
+                  <span class="method-name">refinanceCalculator</span>
+                  <span class="parameters">(ShortenTerm, 50000, 60000, 68123, 720)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,20 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'mortgageCalculator')
 data.setCell(0, 2, 'mortgageCalculatorTest.PurchaseTest')
-data.setCell(0, 3, 3256);
+data.setCell(0, 3, 39277);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'homePage')
+data.setCell(1, 1, 'refinanceCalculator')
 data.setCell(1, 2, 'mortgageCalculatorTest.PurchaseTest')
-data.setCell(1, 3, 476);
+data.setCell(1, 3, 19416);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'homePage')
+data.setCell(2, 2, 'mortgageCalculatorTest.PurchaseTest')
+data.setCell(2, 3, 549);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 59 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -243,11 +260,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">homePage</span>
-                <span class="method-start">21996 ms</span>
+                <span class="method-start">23152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mortgageCalculator(90000, 20000, 68124, 720)</span>
-                <span class="method-start">23212 ms</span>
+                <span class="method-start">24828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refinanceCalculator(ShortenTerm, 50000, 60000, 68123, 720)</span>
+                <span class="method-start">64171 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
